@@ -18,6 +18,7 @@
 		94A785CE1DF7B79C000B6CF1 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A785CD1DF7B79C000B6CF1 /* SourceEditorExtension.swift */; };
 		94A785D01DF7B79C000B6CF1 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A785CF1DF7B79C000B6CF1 /* SourceEditorCommand.swift */; };
 		94A785D41DF7B79C000B6CF1 /* CommentPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94A785C61DF7B79C000B6CF1 /* CommentPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EEDA4D1E2F546100AF81BC /* extCommentLinesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEDA4C1E2F546100AF81BC /* extCommentLinesCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		94A785CD1DF7B79C000B6CF1 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		94A785CF1DF7B79C000B6CF1 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		94A785D11DF7B79C000B6CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EEDA4C1E2F546100AF81BC /* extCommentLinesCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extCommentLinesCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				9425650D1DF7D877009BCA9C /* FoundationExt.swift */,
 				942565091DF7D855009BCA9C /* extCommentCommand.swift */,
+				94EEDA4C1E2F546100AF81BC /* extCommentLinesCommand.swift */,
 				9425650A1DF7D855009BCA9C /* extDocumentCommand.swift */,
 				94A785CD1DF7B79C000B6CF1 /* SourceEditorExtension.swift */,
 				94A785CF1DF7B79C000B6CF1 /* SourceEditorCommand.swift */,
@@ -258,6 +261,7 @@
 				9425650B1DF7D855009BCA9C /* extCommentCommand.swift in Sources */,
 				94A785CE1DF7B79C000B6CF1 /* SourceEditorExtension.swift in Sources */,
 				9425650C1DF7D855009BCA9C /* extDocumentCommand.swift in Sources */,
+				94EEDA4D1E2F546100AF81BC /* extCommentLinesCommand.swift in Sources */,
 				9425650E1DF7D877009BCA9C /* FoundationExt.swift in Sources */,
 				94A785D01DF7B79C000B6CF1 /* SourceEditorCommand.swift in Sources */,
 			);

@@ -251,12 +251,12 @@ class extDocumentCommand: NSObject, XCSourceEditorCommand {
         }
 
         let spaceStr = line.substring(to: charIndex)
-        let docStr   = spaceStr + threeCommentStr + spaceChar + descriptionStr
-
-        if hasDoc(at: index-1, withPrefix: docStr, inLines: lines) {
+//        let docStr   = spaceStr + threeCommentStr + spaceChar + descriptionStr
+        let preStr = spaceStr + "/**"
+        if hasDoc(at: index-1, withPrefix: preStr, inLines: lines) {
             return
         }
-
+        let docStr = preStr + " " + descriptionStr + " */"
         lines.insert(docStr, at: index)
 
         addLineCount += 1

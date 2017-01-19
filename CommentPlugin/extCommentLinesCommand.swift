@@ -9,7 +9,7 @@
 import Foundation
 import XcodeKit
 
-class extCommentCommand: NSObject, XCSourceEditorCommand {
+class extCommentLinesCommand: NSObject, XCSourceEditorCommand {
 
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
 
@@ -41,35 +41,31 @@ class extCommentCommand: NSObject, XCSourceEditorCommand {
     ///
     /// - returns: 注释后的字符串所在的数组
     func select(lines:NSMutableArray, inRange range:ClosedRange<Int>) -> NSMutableArray {
-
-        var line: String
-        var lineCount = 0
-        let doubleCommentStr = "//"
-
-
-        for lineIndex in range.lowerBound...range.upperBound {
-
-            line = lines[lineIndex] as! String
-
-            if line.hasPrefix(doubleCommentStr) {
-                lineCount += 1
+        let startComment = "/*"
+        let endComment = "*/"
+        
+        let count = lines.count
+        let lowBound = range.lowerBound
+        let upBound = range.upperBound + 1
+        if lowBound >= 0 && lowBound < count && upBound <= count {
+            var line = lines[lowBound] as! String
+            var charIndex = line.startIndex
+            while line[charIndex] == " " {
+                charIndex = line.index(after: charIndex)
             }
-        }
-
-        let maxCount = range.upperBound - range.lowerBound + 1
-
-        for lineIndex in range.lowerBound...range.upperBound {
-
-            line = lines[lineIndex] as! String
-
-            if lineCount == maxCount {
-                line.removeSubrange(doubleCommentStr.startIndex...doubleCommentStr.endIndex)
-            }else {
-                line = doubleCommentStr + line
-            }
-
-            lines.replaceObject(at: lineIndex, with: line)
+            var spacesStr  = line.substring(to: charIndex)
+            let preStr = spacesStr + startComment
             
+            line = lines[upBound - 1] as! String
+            charIndex = line.startIndex
+            while line[charIndex] == " " {
+                charIndex = line.index(after: charIndex)
+            }
+            spacesStr  = line.substring(to: charIndex)
+            let endStr = spacesStr + endComment
+            
+            lines.insert(endStr, at: upBound)
+            lines.insert(preStr, at: lowBound)
         }
         
         return lines
@@ -81,39 +77,41 @@ class extCommentCommand: NSObject, XCSourceEditorCommand {
     ///
     /// - returns: 注释后的字符串
     func select(aLine string:String) -> String {
-
         var line = string
-
-        let doubleCommentStr      = "//"
+        let startComment = "/* "
+        let endComment = " */"
         let newLineStr: Character = "\n"
-        let commentStr: Character = "/"
-        let spaceStr: Character   = " "
-        var charIndex             = line.startIndex
+        let spaceStr: Character = " "
+        var charIndex = line.startIndex
 
         while line[charIndex] == spaceStr {
             charIndex = line.index(after: charIndex)
         }
-
+        
         let currentChar = line[charIndex]
-
+        let spacesStr  = line.substring(to: charIndex)
+        
+        var newLine = line.substring(from: charIndex)
+        var endIndex = newLine.endIndex
+        var endChar = newLine[newLine.index(before: endIndex)]
+        while endChar == spaceStr || endChar == newLineStr {
+            endIndex = newLine.index(before: endIndex)
+            endChar = newLine[newLine.index(before: endIndex)]
+        }
+        newLine = newLine.substring(to: endIndex)
+        
         if currentChar == newLineStr {
-            line = doubleCommentStr + line
-        }else {
-
-            let nextChar = line[line.index(after: charIndex)]
-
-            if currentChar == commentStr, nextChar == commentStr {
-                line.removeSubrange(charIndex...line.index(after: charIndex))
-            }else if currentChar == commentStr, nextChar != commentStr {
-
-                if charIndex == line.startIndex {
-                    line.insert(commentStr, at: charIndex)
-                }else {
-                    line.replaceSubrange(line.index(before: charIndex)...charIndex, with: doubleCommentStr)
-                }
-
-            }else {
-                line = doubleCommentStr + line
+            line = spacesStr + startComment + newLine + endComment
+        } else {
+            let isPreComment = newLine.hasPrefix(startComment)
+            let isEndComment = newLine.hasSuffix(endComment)
+            if isPreComment && isEndComment {
+                newLine = line
+                newLine = newLine.replacingOccurrences(of: startComment, with: "")
+                newLine = newLine.replacingOccurrences(of: endComment, with: "")
+                line = newLine
+            } else if !isPreComment && !isEndComment {
+                line = spacesStr + startComment + newLine + endComment
             }
         }
 

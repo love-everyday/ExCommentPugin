@@ -15,7 +15,7 @@ class extCommentCommand: NSObject, XCSourceEditorCommand {
 
         var lines      = invocation.buffer.lines
         let selections = invocation.buffer.selections
-
+        
         for selection in selections {
 
             if let textRange = selection as? XCSourceTextRange, textRange.start.line != lines.count {

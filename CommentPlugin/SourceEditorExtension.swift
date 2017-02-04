@@ -1,9 +1,9 @@
 //
 //  SourceEditorExtension.swift
-//  CommentPlugin
+//  Xalign
 //
-//  Created by Pisen on 2016/12/7.
-//  Copyright © 2016年 SMIT. All rights reserved.
+//  Created by Pisen on 2017/1/19.
+//  Copyright © 2017年 SMIT. All rights reserved.
 //
 
 import Foundation

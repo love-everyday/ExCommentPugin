@@ -15,10 +15,9 @@
 		94A785B81DF7B771000B6CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A785B71DF7B771000B6CF1 /* Assets.xcassets */; };
 		94A785BB1DF7B771000B6CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A785B91DF7B771000B6CF1 /* Main.storyboard */; };
 		94A785C91DF7B79C000B6CF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A785C81DF7B79C000B6CF1 /* Cocoa.framework */; };
-		94A785CE1DF7B79C000B6CF1 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A785CD1DF7B79C000B6CF1 /* SourceEditorExtension.swift */; };
-		94A785D01DF7B79C000B6CF1 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A785CF1DF7B79C000B6CF1 /* SourceEditorCommand.swift */; };
 		94A785D41DF7B79C000B6CF1 /* CommentPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94A785C61DF7B79C000B6CF1 /* CommentPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		94EEDA4D1E2F546100AF81BC /* extCommentLinesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEDA4C1E2F546100AF81BC /* extCommentLinesCommand.swift */; };
+		94D7AD261E456E060062F75B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7AD251E456E060062F75B /* SourceEditorExtension.swift */; };
+		94EEDA4D1E2F546100AF81BC /* extCommentsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEDA4C1E2F546100AF81BC /* extCommentsCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +57,9 @@
 		94A785C61DF7B79C000B6CF1 /* CommentPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CommentPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A785C81DF7B79C000B6CF1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		94A785CC1DF7B79C000B6CF1 /* CommentPlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommentPlugin.entitlements; sourceTree = "<group>"; };
-		94A785CD1DF7B79C000B6CF1 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		94A785CF1DF7B79C000B6CF1 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		94A785D11DF7B79C000B6CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94EEDA4C1E2F546100AF81BC /* extCommentLinesCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extCommentLinesCommand.swift; sourceTree = "<group>"; };
+		94D7AD251E456E060062F75B /* SourceEditorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		94EEDA4C1E2F546100AF81BC /* extCommentsCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extCommentsCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +123,11 @@
 		94A785CA1DF7B79C000B6CF1 /* CommentPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				94D7AD251E456E060062F75B /* SourceEditorExtension.swift */,
 				9425650D1DF7D877009BCA9C /* FoundationExt.swift */,
 				942565091DF7D855009BCA9C /* extCommentCommand.swift */,
-				94EEDA4C1E2F546100AF81BC /* extCommentLinesCommand.swift */,
+				94EEDA4C1E2F546100AF81BC /* extCommentsCommand.swift */,
 				9425650A1DF7D855009BCA9C /* extDocumentCommand.swift */,
-				94A785CD1DF7B79C000B6CF1 /* SourceEditorExtension.swift */,
-				94A785CF1DF7B79C000B6CF1 /* SourceEditorCommand.swift */,
 				94A785D11DF7B79C000B6CF1 /* Info.plist */,
 				94A785CB1DF7B79C000B6CF1 /* Supporting Files */,
 			);
@@ -259,11 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9425650B1DF7D855009BCA9C /* extCommentCommand.swift in Sources */,
-				94A785CE1DF7B79C000B6CF1 /* SourceEditorExtension.swift in Sources */,
 				9425650C1DF7D855009BCA9C /* extDocumentCommand.swift in Sources */,
-				94EEDA4D1E2F546100AF81BC /* extCommentLinesCommand.swift in Sources */,
+				94D7AD261E456E060062F75B /* SourceEditorExtension.swift in Sources */,
+				94EEDA4D1E2F546100AF81BC /* extCommentsCommand.swift in Sources */,
 				9425650E1DF7D877009BCA9C /* FoundationExt.swift in Sources */,
-				94A785D01DF7B79C000B6CF1 /* SourceEditorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +385,7 @@
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = ExCommentPugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -405,6 +402,7 @@
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = ExCommentPugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -420,7 +418,7 @@
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = CommentPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin.CommentPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -437,7 +435,7 @@
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = CommentPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin.CommentPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -73,9 +73,8 @@ extension String {
         return arr
     }
 
-    /// 检查 Swift 是否有返回值
-    ///
-    /// - returns: Swift 是否有返回值
+    
+    
     func funcStrHasReturnValue() -> Bool {
 
         let tempIndex     = range(of: ")")!.lowerBound

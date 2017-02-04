@@ -1,25 +1,18 @@
-
 //  extCommentCommand.swift
 //  ExtXcode8
-//
-//  Created by 王洪运 on 2016/9/27.
-//  Copyright © 2016年 王洪运. All rights reserved.
 //
 
 import Foundation
 import XcodeKit
 
-class extCommentLinesCommand: NSObject, XCSourceEditorCommand {
+class extCommentsCommand: NSObject, XCSourceEditorCommand {
 
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
-
         var lines      = invocation.buffer.lines
         let selections = invocation.buffer.selections
 
         for selection in selections {
-
             if let textRange = selection as? XCSourceTextRange, textRange.start.line != lines.count {
-
                 if textRange.start.line == textRange.end.line {
                     let lineIndex = textRange.start.line
                     let line      = lines[lineIndex] as! String
@@ -31,7 +24,6 @@ class extCommentLinesCommand: NSObject, XCSourceEditorCommand {
         }
 
         completionHandler(nil)
-
     }
 
     /// 选中了多行要注释的字符串
@@ -67,7 +59,6 @@ class extCommentLinesCommand: NSObject, XCSourceEditorCommand {
             lines.insert(endStr, at: upBound)
             lines.insert(preStr, at: lowBound)
         }
-        
         return lines
     }
 

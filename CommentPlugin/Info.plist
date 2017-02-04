@@ -38,11 +38,11 @@
 				</dict>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).extCommentLinesCommand</string>
+					<string>$(PRODUCT_MODULE_NAME).extCommentsCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).extCommentLinesCommand</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).extCommentsCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>extCommentLines</string>
+					<string>extComments</string>
 				</dict>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>

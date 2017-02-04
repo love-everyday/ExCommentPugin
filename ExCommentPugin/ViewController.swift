@@ -6,13 +6,18 @@
 //  Copyright © 2016年 SMIT. All rights reserved.
 //
 
+
+
+let a = 1
+let b = "123"
+
 import Cocoa
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +26,5 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-    
 }
 

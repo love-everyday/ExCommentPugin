@@ -21,6 +21,6 @@ ExCommentPugin is plugin for Xcode8, which can comment codes and add the documen
 
 ## Usage
 
-1. `extComment` ![注释1](Resources/注释1.gif)
-2. `extComments` ![注释2](Resources/注释2.gif)
-3. `extDocument` ![注释3](Resources/注释3.gif)
+1. `extComment` </br>![注释1](Resources/注释1.gif)
+2. `extComments` </br>![注释2](Resources/注释2.gif)
+3. `extDocument` </br>![注释3](Resources/注释3.gif)

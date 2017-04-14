@@ -5,7 +5,7 @@
 import Foundation
 import XcodeKit
 
-class extCommentCommand: NSObject, XCSourceEditorCommand {
+class ExtCommentCommand: NSObject, XCSourceEditorCommand {
 
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
 

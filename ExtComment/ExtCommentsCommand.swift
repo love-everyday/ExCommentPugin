@@ -5,7 +5,7 @@
 import Foundation
 import XcodeKit
 
-class extCommentsCommand: NSObject, XCSourceEditorCommand {
+class ExtCommentsCommand: NSObject, XCSourceEditorCommand {
 
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
         var lines      = invocation.buffer.lines

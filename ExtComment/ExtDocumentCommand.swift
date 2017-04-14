@@ -6,7 +6,7 @@
 import Foundation
 import XcodeKit
 
-class extDocumentCommand: NSObject, XCSourceEditorCommand {
+class ExtDocumentCommand: NSObject, XCSourceEditorCommand {
 
     var addLineCount    = 0
     let spaceChar       = " "

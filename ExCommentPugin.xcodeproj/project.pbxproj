@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9425650B1DF7D855009BCA9C /* extCommentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942565091DF7D855009BCA9C /* extCommentCommand.swift */; };
-		9425650C1DF7D855009BCA9C /* extDocumentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425650A1DF7D855009BCA9C /* extDocumentCommand.swift */; };
-		9425650E1DF7D877009BCA9C /* FoundationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425650D1DF7D877009BCA9C /* FoundationExt.swift */; };
+		94A3143B1E94C6080009F44B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A785C81DF7B79C000B6CF1 /* Cocoa.framework */; };
+		94A314401E94C6090009F44B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3143F1E94C6090009F44B /* SourceEditorExtension.swift */; };
+		94A314421E94C6090009F44B /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A314411E94C6090009F44B /* SourceEditorCommand.swift */; };
+		94A314461E94C6090009F44B /* ExtComment.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94A3143A1E94C6080009F44B /* ExtComment.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94A785B41DF7B771000B6CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A785B31DF7B771000B6CF1 /* AppDelegate.swift */; };
 		94A785B61DF7B771000B6CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A785B51DF7B771000B6CF1 /* ViewController.swift */; };
 		94A785B81DF7B771000B6CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A785B71DF7B771000B6CF1 /* Assets.xcassets */; };
 		94A785BB1DF7B771000B6CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A785B91DF7B771000B6CF1 /* Main.storyboard */; };
-		94A785C91DF7B79C000B6CF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A785C81DF7B79C000B6CF1 /* Cocoa.framework */; };
-		94A785D41DF7B79C000B6CF1 /* CommentPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94A785C61DF7B79C000B6CF1 /* CommentPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		94D7AD261E456E060062F75B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7AD251E456E060062F75B /* SourceEditorExtension.swift */; };
-		94EEDA4D1E2F546100AF81BC /* extCommentsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EEDA4C1E2F546100AF81BC /* extCommentsCommand.swift */; };
+		94DB7D551E94C79C00803237 /* FoundationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DB7D541E94C79C00803237 /* FoundationExt.swift */; };
+		94DB7D591E94C85700803237 /* ExtCommentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DB7D561E94C85700803237 /* ExtCommentCommand.swift */; };
+		94DB7D5A1E94C85700803237 /* ExtCommentsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DB7D571E94C85700803237 /* ExtCommentsCommand.swift */; };
+		94DB7D5B1E94C85700803237 /* ExtDocumentCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DB7D581E94C85700803237 /* ExtDocumentCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		94A785D21DF7B79C000B6CF1 /* PBXContainerItemProxy */ = {
+		94A314441E94C6090009F44B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 94A785A81DF7B771000B6CF1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94A785C51DF7B79C000B6CF1;
-			remoteInfo = CommentPlugin;
+			remoteGlobalIDString = 94A314391E94C6080009F44B;
+			remoteInfo = ExtComment;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				94A785D41DF7B79C000B6CF1 /* CommentPlugin.appex in Embed App Extensions */,
+				94A314461E94C6090009F44B /* ExtComment.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,24 +46,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		942565091DF7D855009BCA9C /* extCommentCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extCommentCommand.swift; sourceTree = "<group>"; };
-		9425650A1DF7D855009BCA9C /* extDocumentCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extDocumentCommand.swift; sourceTree = "<group>"; };
-		9425650D1DF7D877009BCA9C /* FoundationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExt.swift; sourceTree = "<group>"; };
+		94A3143A1E94C6080009F44B /* ExtComment.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtComment.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A3143E1E94C6080009F44B /* ExtComment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExtComment.entitlements; sourceTree = "<group>"; };
+		94A3143F1E94C6090009F44B /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		94A314411E94C6090009F44B /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		94A314431E94C6090009F44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94A785B01DF7B771000B6CF1 /* ExCommentPugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExCommentPugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A785B31DF7B771000B6CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A785B51DF7B771000B6CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94A785B71DF7B771000B6CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94A785BA1DF7B771000B6CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94A785BC1DF7B771000B6CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94A785C61DF7B79C000B6CF1 /* CommentPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CommentPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A785C81DF7B79C000B6CF1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		94A785CC1DF7B79C000B6CF1 /* CommentPlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommentPlugin.entitlements; sourceTree = "<group>"; };
-		94A785D11DF7B79C000B6CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94D7AD251E456E060062F75B /* SourceEditorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		94EEDA4C1E2F546100AF81BC /* extCommentsCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extCommentsCommand.swift; sourceTree = "<group>"; };
+		94DB7D541E94C79C00803237 /* FoundationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExt.swift; sourceTree = "<group>"; };
+		94DB7D561E94C85700803237 /* ExtCommentCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtCommentCommand.swift; sourceTree = "<group>"; };
+		94DB7D571E94C85700803237 /* ExtCommentsCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtCommentsCommand.swift; sourceTree = "<group>"; };
+		94DB7D581E94C85700803237 /* ExtDocumentCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtDocumentCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		94A314371E94C6080009F44B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A3143B1E94C6080009F44B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A785AD1DF7B771000B6CF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,22 +80,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94A785C31DF7B79C000B6CF1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94A785C91DF7B79C000B6CF1 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94A3143C1E94C6080009F44B /* ExtComment */ = {
+			isa = PBXGroup;
+			children = (
+				94DB7D561E94C85700803237 /* ExtCommentCommand.swift */,
+				94DB7D571E94C85700803237 /* ExtCommentsCommand.swift */,
+				94DB7D581E94C85700803237 /* ExtDocumentCommand.swift */,
+				94DB7D541E94C79C00803237 /* FoundationExt.swift */,
+				94A3143F1E94C6090009F44B /* SourceEditorExtension.swift */,
+				94A314411E94C6090009F44B /* SourceEditorCommand.swift */,
+				94A314431E94C6090009F44B /* Info.plist */,
+				94A3143D1E94C6080009F44B /* Supporting Files */,
+			);
+			path = ExtComment;
+			sourceTree = "<group>";
+		};
+		94A3143D1E94C6080009F44B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94A3143E1E94C6080009F44B /* ExtComment.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		94A785A71DF7B771000B6CF1 = {
 			isa = PBXGroup;
 			children = (
 				94A785B21DF7B771000B6CF1 /* ExCommentPugin */,
-				94A785CA1DF7B79C000B6CF1 /* CommentPlugin */,
+				94A3143C1E94C6080009F44B /* ExtComment */,
 				94A785C71DF7B79C000B6CF1 /* Frameworks */,
 				94A785B11DF7B771000B6CF1 /* Products */,
 			);
@@ -95,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				94A785B01DF7B771000B6CF1 /* ExCommentPugin.app */,
-				94A785C61DF7B79C000B6CF1 /* CommentPlugin.appex */,
+				94A3143A1E94C6080009F44B /* ExtComment.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,31 +145,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		94A785CA1DF7B79C000B6CF1 /* CommentPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				94D7AD251E456E060062F75B /* SourceEditorExtension.swift */,
-				9425650D1DF7D877009BCA9C /* FoundationExt.swift */,
-				942565091DF7D855009BCA9C /* extCommentCommand.swift */,
-				94EEDA4C1E2F546100AF81BC /* extCommentsCommand.swift */,
-				9425650A1DF7D855009BCA9C /* extDocumentCommand.swift */,
-				94A785D11DF7B79C000B6CF1 /* Info.plist */,
-				94A785CB1DF7B79C000B6CF1 /* Supporting Files */,
-			);
-			path = CommentPlugin;
-			sourceTree = "<group>";
-		};
-		94A785CB1DF7B79C000B6CF1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				94A785CC1DF7B79C000B6CF1 /* CommentPlugin.entitlements */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		94A314391E94C6080009F44B /* ExtComment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94A314471E94C6090009F44B /* Build configuration list for PBXNativeTarget "ExtComment" */;
+			buildPhases = (
+				94A314361E94C6080009F44B /* Sources */,
+				94A314371E94C6080009F44B /* Frameworks */,
+				94A314381E94C6080009F44B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtComment;
+			productName = ExtComment;
+			productReference = 94A3143A1E94C6080009F44B /* ExtComment.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 		94A785AF1DF7B771000B6CF1 /* ExCommentPugin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94A785BF1DF7B771000B6CF1 /* Build configuration list for PBXNativeTarget "ExCommentPugin" */;
@@ -157,29 +177,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				94A785D31DF7B79C000B6CF1 /* PBXTargetDependency */,
+				94A314451E94C6090009F44B /* PBXTargetDependency */,
 			);
 			name = ExCommentPugin;
 			productName = ExCommentPugin;
 			productReference = 94A785B01DF7B771000B6CF1 /* ExCommentPugin.app */;
 			productType = "com.apple.product-type.application";
-		};
-		94A785C51DF7B79C000B6CF1 /* CommentPlugin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 94A785D51DF7B79C000B6CF1 /* Build configuration list for PBXNativeTarget "CommentPlugin" */;
-			buildPhases = (
-				94A785C21DF7B79C000B6CF1 /* Sources */,
-				94A785C31DF7B79C000B6CF1 /* Frameworks */,
-				94A785C41DF7B79C000B6CF1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CommentPlugin;
-			productName = CommentPlugin;
-			productReference = 94A785C61DF7B79C000B6CF1 /* CommentPlugin.appex */;
-			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -187,16 +190,16 @@
 		94A785A81DF7B771000B6CF1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = SMIT;
 				TargetAttributes = {
-					94A785AF1DF7B771000B6CF1 = {
-						CreatedOnToolsVersion = 8.1;
+					94A314391E94C6080009F44B = {
+						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 9GH6UJW25X;
 						ProvisioningStyle = Automatic;
 					};
-					94A785C51DF7B79C000B6CF1 = {
+					94A785AF1DF7B771000B6CF1 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9GH6UJW25X;
 						ProvisioningStyle = Automatic;
@@ -217,12 +220,19 @@
 			projectRoot = "";
 			targets = (
 				94A785AF1DF7B771000B6CF1 /* ExCommentPugin */,
-				94A785C51DF7B79C000B6CF1 /* CommentPlugin */,
+				94A314391E94C6080009F44B /* ExtComment */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		94A314381E94C6080009F44B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A785AE1DF7B771000B6CF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,16 +242,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94A785C41DF7B79C000B6CF1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		94A314361E94C6080009F44B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB7D5A1E94C85700803237 /* ExtCommentsCommand.swift in Sources */,
+				94A314401E94C6090009F44B /* SourceEditorExtension.swift in Sources */,
+				94DB7D591E94C85700803237 /* ExtCommentCommand.swift in Sources */,
+				94A314421E94C6090009F44B /* SourceEditorCommand.swift in Sources */,
+				94DB7D5B1E94C85700803237 /* ExtDocumentCommand.swift in Sources */,
+				94DB7D551E94C79C00803237 /* FoundationExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A785AC1DF7B771000B6CF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,25 +267,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94A785C21DF7B79C000B6CF1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9425650B1DF7D855009BCA9C /* extCommentCommand.swift in Sources */,
-				9425650C1DF7D855009BCA9C /* extDocumentCommand.swift in Sources */,
-				94D7AD261E456E060062F75B /* SourceEditorExtension.swift in Sources */,
-				94EEDA4D1E2F546100AF81BC /* extCommentsCommand.swift in Sources */,
-				9425650E1DF7D877009BCA9C /* FoundationExt.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		94A785D31DF7B79C000B6CF1 /* PBXTargetDependency */ = {
+		94A314451E94C6090009F44B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94A785C51DF7B79C000B6CF1 /* CommentPlugin */;
-			targetProxy = 94A785D21DF7B79C000B6CF1 /* PBXContainerItemProxy */;
+			target = 94A314391E94C6080009F44B /* ExtComment */;
+			targetProxy = 94A314441E94C6090009F44B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -285,6 +289,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		94A314481E94C6090009F44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = ExtComment/ExtComment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9GH6UJW25X;
+				INFOPLIST_FILE = ExtComment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin.ExtComment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		94A314491E94C6090009F44B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_ENTITLEMENTS = ExtComment/ExtComment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9GH6UJW25X;
+				INFOPLIST_FILE = ExtComment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin.ExtComment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		94A785BD1DF7B771000B6CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -385,7 +427,7 @@
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = ExCommentPugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -402,43 +444,9 @@
 				DEVELOPMENT_TEAM = 9GH6UJW25X;
 				INFOPLIST_FILE = ExCommentPugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		94A785D61DF7B79C000B6CF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CommentPlugin/CommentPlugin.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9GH6UJW25X;
-				INFOPLIST_FILE = CommentPlugin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin.CommentPlugin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		94A785D71DF7B79C000B6CF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CommentPlugin/CommentPlugin.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9GH6UJW25X;
-				INFOPLIST_FILE = CommentPlugin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.project.ExCommentPugin.CommentPlugin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -446,6 +454,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		94A314471E94C6090009F44B /* Build configuration list for PBXNativeTarget "ExtComment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A314481E94C6090009F44B /* Debug */,
+				94A314491E94C6090009F44B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		94A785AB1DF7B771000B6CF1 /* Build configuration list for PBXProject "ExCommentPugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -460,15 +477,6 @@
 			buildConfigurations = (
 				94A785C01DF7B771000B6CF1 /* Debug */,
 				94A785C11DF7B771000B6CF1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94A785D51DF7B79C000B6CF1 /* Build configuration list for PBXNativeTarget "CommentPlugin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				94A785D61DF7B79C000B6CF1 /* Debug */,
-				94A785D71DF7B79C000B6CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

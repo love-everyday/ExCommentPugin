@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>zh_CN</string>
+	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>CommentPlugin</string>
+	<string>ExtComment</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -30,27 +30,27 @@
 			<array>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).extCommentCommand</string>
+					<string>$(PRODUCT_MODULE_NAME).ExtCommentsCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER). extCommentCommand</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).ExtCommentsCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>extComment</string>
+					<string>exComments</string>
 				</dict>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).extCommentsCommand</string>
+					<string>$(PRODUCT_MODULE_NAME).ExtCommentCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).extCommentsCommand</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).ExtCommentCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>extComments</string>
+					<string>exComment</string>
 				</dict>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).extDocumentCommand</string>
+					<string>$(PRODUCT_MODULE_NAME).ExtDocumentCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER). extDocumentCommand</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).ExtDocumentCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>extDocument</string>
+					<string>exDocument</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
@@ -60,6 +60,6 @@
 		<string>com.apple.dt.Xcode.extension.source-editor</string>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2016年 SMIT. All rights reserved.</string>
+	<string>Copyright © 2017年 SMIT. All rights reserved.</string>
 </dict>
 </plist>

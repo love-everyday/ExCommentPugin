@@ -4,19 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CommentPlugin.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>ExCommentPugin.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ExtComment.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>94A314251E94C3290009F44B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94A314391E94C6080009F44B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>94A785AF1DF7B771000B6CF1</key>
 		<dict>
 			<key>primary</key>
